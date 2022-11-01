@@ -1,6 +1,7 @@
 {
 	"name": "Activity1",
 	"shortDescription": "Activity1",
+	"descriptionMarkdown": "activity.md",
 	"topology": [
 	
 		{
