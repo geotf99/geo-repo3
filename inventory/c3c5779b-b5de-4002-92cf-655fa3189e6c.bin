@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><tbml xmlns="http://www.teslaalliance.org/trs/tbml/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.teslaalliance.org/trs/tbml/1.0/tbml-core.xsd">
+<header>
+<name>top</name>
+<description/>
+</header>
+<illustration>
+<layer/>
+</illustration>
+<body>
+<resources>
+<resource guid="249433aa-147c-4559-94da-54892e0a8f69" id="i3f15891a-71d1-44e3-b131-f8b7d541383d" shared="true" type="device">
+<property isimportant="false" name="name">template_test</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="utilizationType">INHERIT</property>
+<property isimportant="false" name="ilo_iconId"/>
+<property isimportant="false" name="iconURI">ilo://api/0/resource/icon?id=249433aa-147c-4559-94da-54892e0a8f69</property>
+<property isimportant="false" name="isIconVisible"/>
+<property isimportant="false" name="reservationTime">IMMEDIATE</property>
+<property isimportant="false" name="hostResource_topologyResourceId"/>
+<property isimportant="false" name="hostResource_parentType"/>
+<property isimportant="false" name="ilo_shape">RECTANGLE</property>
+<property isimportant="false" name="color">WHITE</property>
+<property isimportant="false" name="borderColor">SILVER</property>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">template[template_test]</extensions>
+<extensions type="com.fnfr.itest.session" xs:namespace="com.fnfr.itest.session">
+<session name="session2" provider="com.fnfr">
+<id>4eab4232-2576-4c99-8721-769f6daf87fb</id>
+<isInherited>false</isInherited>
+<isDisabled>false</isDisabled>
+<sessionProfile version="9.2.0">
+<language>Python</language>
+<baseApplication>com.fnfr.svt.applications.ssh</baseApplication>
+<baseProfile/>
+<standalone>true</standalone>
+<sessionProperties type="com.fnfr.svt.applications.ssh.documents.SSHProperties">
+<ipAddress inherit="false">[velocity('property','ipAddress')]</ipAddress>
+<user inherit="false">[velocity('property','username')]</user>
+<password inherit="false">d7VqHMc27Pk+julgJmPJeBnfrcqbypMQwXgj7YUWL6xIHNAaGBit5A==</password>
+</sessionProperties>
+<agentRequirements inherit="true">
+<requirement/>
+</agentRequirements>
+</sessionProfile>
+</session>
+</extensions>
+<boundary height="72" width="200" x="160" y="199"/>
+<property name="inventoryName"/>
+</resource>
+</resources>
+<connectivity/>
+</body>
+</tbml>
