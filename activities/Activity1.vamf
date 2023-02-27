@@ -12,6 +12,16 @@
 			"reservationDuration": "60",
 			"automation": [
 				
+				
+				{
+					"allowToRunWithOptions":true,
+					"testPath": "geo-repo-package/sleep/sleep_5min.fftc"
+				}
+				
+				
+				
+				
+				
 				      ]
 		
 		}
