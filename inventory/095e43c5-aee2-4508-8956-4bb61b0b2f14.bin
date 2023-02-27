@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><tbml xmlns="http://www.teslaalliance.org/trs/tbml/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.teslaalliance.org/trs/tbml/1.0/tbml-core.xsd">
+<header>
+<name>New topology (15)</name>
+<description/>
+<property name="emulation" vendor="com.fnfr">enabled</property>
+</header>
+<illustration>
+<layer/>
+</illustration>
+<body>
+<resources>
+<resource guid="81747ea0-f1fa-4a1b-8a3a-3e4f255c5067" id="i2681ad00-5612-4db5-a356-31769bf9a03f" shared="true" type="device">
+<property isimportant="false" name="name">AbsTest_PC</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="utilizationType">INHERIT</property>
+<property isimportant="false" name="ilo_iconId"/>
+<property isimportant="false" name="iconURI">ilo://api/0/resource/icon?id=81747ea0-f1fa-4a1b-8a3a-3e4f255c5067</property>
+<property isimportant="false" name="isIconVisible"/>
+<property isimportant="false" name="reservationTime">IMMEDIATE</property>
+<property isimportant="false" name="hostResource_topologyResourceId"/>
+<property isimportant="false" name="hostResource_parentType"/>
+<property isimportant="false" name="ilo_shape">RECTANGLE</property>
+<property isimportant="false" name="color">WHITE</property>
+<property isimportant="false" name="borderColor">SILVER</property>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">template[PC]</extensions>
+<boundary height="72" width="200" x="200" y="139"/>
+<resource guid="b9ea5164-00c4-40ed-ab09-41e5d9f1b0b8" id="i90e9cc50-9ffe-4fe9-8444-3ce83caae324" type="port">
+<property isimportant="false" name="name">New-Port-1</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="connectivity">any</property>
+<property isimportant="false" name="keepOnRemoveConnection">true</property>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">template[Network Port]</extensions>
+<property name="inventoryName"/>
+</resource>
+<resource guid="28adbc5d-1eaa-44dc-b8b0-a3ea4a5c7e89" id="ia8e287fa-cad9-4a3a-86a3-ae9a8a409c15" type="port">
+<property isimportant="false" name="name">New-Port-3</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="connectivity">any</property>
+<property isimportant="false" name="keepOnRemoveConnection">true</property>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">template[Network Port]</extensions>
+<property name="inventoryName"/>
+</resource>
+<resource guid="1bc97479-6ad1-4159-9d15-df2d1d27e544" id="i1206a5d5-46ff-42e0-b3a1-6be3d31ae157" type="port">
+<property isimportant="false" name="name">Port0</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="connectivity">any</property>
+<property isimportant="false" name="keepOnRemoveConnection">true</property>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">template[Network Port]</extensions>
+<property name="inventoryName"/>
+</resource>
+<resource guid="5a481317-5590-4dfb-8ff9-c1346eba6ef0" id="id09d3c4e-2086-4dc8-a5c3-321f76e5aa3e" type="port">
+<property isimportant="false" name="name">Port 1</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="connectivity">any</property>
+<property isimportant="false" name="keepOnRemoveConnection">true</property>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">template[Network Port]</extensions>
+<property name="inventoryName"/>
+</resource>
+<resource guid="07a0042a-b130-413e-bd5f-6cf2d0ad88ac" id="ic7040538-3c28-4f73-a240-7fed1891b5d6" type="port">
+<property isimportant="false" name="name">Port_2</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="connectivity">any</property>
+<property isimportant="false" name="keepOnRemoveConnection">true</property>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">template[Network Port]</extensions>
+<property name="inventoryName"/>
+</resource>
+<property name="inventoryName"/>
+</resource>
+</resources>
+<connectivity/>
+</body>
+</tbml>

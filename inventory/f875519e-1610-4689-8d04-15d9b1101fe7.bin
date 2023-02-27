@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><tbml xmlns="http://www.teslaalliance.org/trs/tbml/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.teslaalliance.org/trs/tbml/1.0/tbml-core.xsd">
+<header>
+<name>top-cam</name>
+<description/>
+<property name="emulation" vendor="com.fnfr">enabled</property>
+</header>
+<illustration>
+<layer/>
+</illustration>
+<body>
+<resources>
+<resource guid="3d837bfc-9b42-4a52-a5f0-6d72d769b784" id="ib808990b-e931-4cf9-b495-8322f320934e" shared="true" type="device">
+<property isimportant="false" name="name">CAM Device - NLA</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="utilizationType">INHERIT</property>
+<property isimportant="false" name="ilo_iconId">00000000-0000-0000-0000-000000000000</property>
+<property isimportant="false" name="iconURI">assets/img/webte/device.png</property>
+<property isimportant="false" name="isIconVisible"/>
+<property isimportant="false" name="reservationTime">IMMEDIATE</property>
+<property isimportant="false" name="hostResource_topologyResourceId"/>
+<property isimportant="false" name="hostResource_parentType"/>
+<property isimportant="false" name="ilo_shape">RECTANGLE</property>
+<property isimportant="false" name="color">WHITE</property>
+<property isimportant="false" name="borderColor">SILVER</property>
+<propertyCollection name="System Identification" order="-100">
+<property description="" editable="false" id="ipAddress" iscloudspecific="false" isimportant="false" name="ipAddress" required="false" type="TEXT">127.0.0.1</property>
+</propertyCollection>
+<propertyCollection name="Credentials" order="-100">
+<property description="" editable="false" id="passwordAdmin" iscloudspecific="false" isimportant="false" name="passwordAdmin" required="false" type="PASSWORD">spirent</property>
+<property description="" editable="false" id="passwordReadWrite" iscloudspecific="false" isimportant="false" name="passwordReadWrite" required="false" type="PASSWORD">spirent</property>
+<property description="" editable="false" id="usernameAdmin" iscloudspecific="false" isimportant="false" name="usernameAdmin" required="false" type="TEXT">spirent</property>
+<property description="" editable="false" id="usernameReadOnly" iscloudspecific="false" isimportant="false" name="usernameReadOnly" required="false" type="TEXT">spirent</property>
+<property description="" editable="false" id="usernameReadWrite" iscloudspecific="false" isimportant="false" name="usernameReadWrite" required="false" type="TEXT">spirent</property>
+<property description="" editable="false" id="passwordReadOnly" iscloudspecific="false" isimportant="false" name="passwordReadOnly" required="false" type="PASSWORD">spirent</property>
+</propertyCollection>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">template[Console Access Management]</extensions>
+<boundary height="72" width="200" x="120" y="59"/>
+<property name="inventoryName"/>
+</resource>
+</resources>
+<connectivity/>
+</body>
+</tbml>
