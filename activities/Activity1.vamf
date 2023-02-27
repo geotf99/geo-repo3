@@ -16,6 +16,10 @@
 				{
 					"allowToRunWithOptions":true,
 					"testPath": "geo-repo-package/sleep/sleep_5min.fftc"
+				},
+				{
+					"allowToRunWithOptions":true,
+					"testPath": "geo-repo-package/runlists/runlist_fftc.vrl"
 				}
 				
 				
