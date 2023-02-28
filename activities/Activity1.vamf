@@ -19,7 +19,15 @@
 				},
 				{
 					"allowToRunWithOptions":true,
-					"testPath": "geo-repo-package/runlists/runlist_fftc.vrl"
+					"testPath": "geo-repo-package/runlists/runlist_fftc.vrl",
+					"parameterFilePath": "geo-repo-package/activity-catalog-assets/parameters/parameterFile2.ffpt",
+					"parametersList": [
+						{
+							"name": "parameterFile1",
+							"value": "asuihfasdhfu",
+							"type": "TEXT"
+						}
+					]
 				}
 				
 				
