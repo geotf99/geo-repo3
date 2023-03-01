@@ -24,6 +24,17 @@
 				
 				      ]
 		
+		},
+		
+		
+		{
+			"name": "Topo1",
+			"addRepositoryNamePrefix": "false",
+			"actionTitle": "Reserve",
+			"description": "Topology reservation",
+			"reservationDuration": "60",
+			"automation": []
+		
 		}
 		   ]
 }
