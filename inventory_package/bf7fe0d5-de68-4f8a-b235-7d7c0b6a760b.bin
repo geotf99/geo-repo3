@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><tbml xmlns="http://www.teslaalliance.org/trs/tbml/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.teslaalliance.org/trs/tbml/1.0/tbml-core.xsd">
+<header>
+<name>New topology</name>
+<description/>
+</header>
+<illustration>
+<layer/>
+</illustration>
+<body>
+<resources>
+<resource guid="5348553f-8da7-4dd8-ae3f-1871e4b764d7" id="id43163e0-b4c1-48fb-9917-7876313a5dc6" shared="true" type="device">
+<property isimportant="false" name="name">resource (copy)</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="utilizationType">INHERIT</property>
+<property isimportant="false" name="ilo_iconId">00000000-0000-0000-0000-000000000000</property>
+<property isimportant="false" name="iconURI">assets/img/webte/device.png</property>
+<property isimportant="false" name="isIconVisible"/>
+<property isimportant="false" name="reservationTime">IMMEDIATE</property>
+<property isimportant="false" name="hostResource_topologyResourceId"/>
+<property isimportant="false" name="hostResource_parentType"/>
+<property isimportant="false" name="ilo_shape">RECTANGLE</property>
+<property isimportant="false" name="color">WHITE</property>
+<property isimportant="false" name="borderColor">SILVER</property>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">template[template]</extensions>
+<boundary height="72" width="200" x="300" y="139"/>
+<property name="inventoryName"/>
+</resource>
+</resources>
+<connectivity/>
+</body>
+</tbml>
