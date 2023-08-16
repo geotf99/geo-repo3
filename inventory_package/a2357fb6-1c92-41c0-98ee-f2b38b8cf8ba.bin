@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><tbml xmlns="http://www.teslaalliance.org/trs/tbml/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.teslaalliance.org/trs/tbml/1.0/tbml-core.xsd">
+<header>
+<name>New topology (6)</name>
+<description/>
+<property name="emulation" vendor="com.fnfr">enabled</property>
+</header>
+<illustration>
+<layer/>
+</illustration>
+<body>
+<resources>
+<resource id="i232c4268-89bd-476c-8d11-3b831f15bcc9" shared="false" type="group">
+<property isimportant="false" name="name">New topology (5)</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="ilo_iconId"/>
+<property isimportant="false" name="iconURI">assets/img/webte/device.png</property>
+<property isimportant="false" name="isIconVisible"/>
+<property isimportant="false" name="topologyid">67a3fa75-feac-4bfb-9c35-3b10441eeae9</property>
+<property isimportant="false" name="revision">1</property>
+<property isimportant="false" name="originalrevision">0</property>
+<property isimportant="false" name="currentrevision">1</property>
+<property isimportant="false" name="subscriptionstatus">unsubscribed</property>
+<property isimportant="false" name="collapsed"/>
+<property isimportant="false" name="color">WHITE</property>
+<property isimportant="false" name="borderColor">SILVER</property>
+<boundary height="137" width="240" x="122.19998168945307" y="257.50000000000006"/>
+</resource>
+<resource guid="fea52e8b-8d75-455e-baa5-80751d9625c7" id="i232c4268-89bd-476c-8d11-3b831f15bcc9--ia8615818-2c8e-484e-9726-3123236d8059" shared="true" type="device">
+<property isimportant="false" name="name">Test Res</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="utilizationType">INHERIT</property>
+<property isimportant="false" name="ilo_iconId">62bc1124-cf90-40b9-bf1f-745bbae1718f</property>
+<property isimportant="false" name="iconURI">/velocity/api/repository/v2/asset/62bc1124-cf90-40b9-bf1f-745bbae1718f?rasterizedIconSize=64</property>
+<property isimportant="false" name="isIconVisible">true</property>
+<property isimportant="false" name="reservationTime">IMMEDIATE</property>
+<property isimportant="false" name="hostResource_topologyResourceId"/>
+<property isimportant="false" name="hostResource_parentType"/>
+<property isimportant="false" name="ilo_shape">RECTANGLE</property>
+<property isimportant="false" name="color">WHITE</property>
+<property isimportant="false" name="borderColor">SILVER</property>
+<propertyCollection name="System Identification" order="undefined">
+<property editable="false" id="f766af5e-fa1e-36ba-ee97-1698913daf82" iscloudspecific="false" isimportant="false" name="ipAddress" required="false" type="text" valuelabel=""/>
+<property editable="false" id="a137b895-b300-0f84-2078-82d7a4610c00" iscloudspecific="false" isimportant="false" name="Hostname" required="false" type="text" valuelabel=""/>
+<property editable="false" id="62454348-358d-a69a-8a61-128d569d8318" iscloudspecific="false" isimportant="false" name="Make" required="false" type="text" valuelabel=""/>
+<property editable="false" id="70f77fba-d6ff-4887-9645-b5cd85b0f356" iscloudspecific="false" isimportant="false" name="Model" required="false" type="text" valuelabel=""/>
+<property editable="false" id="79e21e63-53ae-684d-7ebd-e8bcecc275e6" iscloudspecific="false" isimportant="false" name="Serial Number" required="false" type="text" valuelabel=""/>
+<property editable="false" id="ba24e7ef-4fd7-0077-fc1d-a9d545fbd402" iscloudspecific="false" isimportant="false" name="Console server" required="false" type="text" valuelabel=""/>
+</propertyCollection>
+<propertyCollection name="Location Information" order="undefined">
+<property editable="false" id="e5e4a3c0-eb49-adb3-7cc0-b0f381ae8bd3" iscloudspecific="false" isimportant="false" name="Facility" required="false" type="text" valuelabel=""/>
+<property editable="false" id="5013c405-8fc5-fb12-0458-4e40d6ff5dc5" iscloudspecific="false" isimportant="false" name="Room" required="false" type="text" valuelabel=""/>
+<property editable="false" id="767988b1-15ef-5495-06e8-3096d3737aa4" iscloudspecific="false" isimportant="false" name="Floor Position" required="false" type="text" valuelabel=""/>
+</propertyCollection>
+<propertyCollection name="Credentials" order="undefined">
+<property editable="false" id="b7e18219-366c-35b5-5482-25dc274b0267" iscloudspecific="false" isimportant="false" name="username" required="false" type="text" valuelabel=""/>
+<property editable="false" id="04243b18-da6e-1102-a330-e8b263f7be82" iscloudspecific="false" isimportant="false" name="password" required="false" type="password" valuelabel=""/>
+</propertyCollection>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">template[PC]</extensions>
+<boundary height="72" width="200" x="-200" y="308"/>
+<property name="inventoryName"/>
+</resource>
+</resources>
+<connectivity/>
+</body>
+</tbml>

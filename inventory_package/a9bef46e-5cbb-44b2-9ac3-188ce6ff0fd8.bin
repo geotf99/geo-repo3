@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><tbml xmlns="http://www.teslaalliance.org/trs/tbml/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.teslaalliance.org/trs/tbml/1.0/tbml-core.xsd">
+<header>
+<name>New topology (8)</name>
+<description/>
+<property name="emulation" vendor="com.fnfr">enabled</property>
+</header>
+<illustration>
+<layer/>
+</illustration>
+<body>
+<resources>
+<resource id="if6583303-1634-48d1-8d6e-3edaab4c216b" shared="false" type="group">
+<property isimportant="false" name="name"/>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="ilo_iconId"/>
+<property isimportant="false" name="iconURI"/>
+<property isimportant="false" name="isIconVisible"/>
+<property isimportant="false" name="nestedStructureNodeId">i5c69fde3-4776-49b2-b10b-8191abce440e</property>
+<property isimportant="false" name="nestedStructureNodeInventoryId"/>
+<property isimportant="false" name="collapsed"/>
+<boundary height="193" width="230" x="205" y="138.5"/>
+<resource guid="3dbcfe74-ea5c-4241-ba55-66501bb1b41a" id="i5c69fde3-4776-49b2-b10b-8191abce440e" shared="true" type="device">
+<property isimportant="false" name="name">T1</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="utilizationType">INHERIT</property>
+<property isimportant="false" name="ilo_iconId"/>
+<property isimportant="false" name="iconURI">ilo://api/0/resource/icon?id=3dbcfe74-ea5c-4241-ba55-66501bb1b41a</property>
+<property isimportant="false" name="isIconVisible"/>
+<property isimportant="false" name="reservationTime">IMMEDIATE</property>
+<property isimportant="false" name="hostResource_topologyResourceId"/>
+<property isimportant="false" name="hostResource_parentType"/>
+<property isimportant="false" name="ilo_shape">RECTANGLE</property>
+<property isimportant="false" name="color">WHITE</property>
+<property isimportant="false" name="borderColor">SILVER</property>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">template[T1]</extensions>
+<boundary height="193" width="230" x="0" y="0"/>
+<property name="inventoryName"/>
+</resource>
+<resource id="i36338326-d38d-4150-820c-da7af6a927ce" shared="false" type="group">
+<property isimportant="false" name="name"/>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="ilo_iconId"/>
+<property isimportant="false" name="iconURI"/>
+<property isimportant="false" name="isIconVisible"/>
+<property isimportant="false" name="collapsed"/>
+<boundary height="87" width="230" x="0" y="106"/>
+<resource id="id4b4a3a0-f6df-457d-b0bf-b9c4c5c798a0" shared="false" type="group">
+<property isimportant="false" name="name"/>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="ilo_iconId"/>
+<property isimportant="false" name="iconURI"/>
+<property isimportant="false" name="isIconVisible"/>
+<property isimportant="false" name="nestedStructureNodeId">i3dfdf373-d9b3-4f65-aae7-211cf1b9c59d</property>
+<property isimportant="false" name="nestedStructureNodeInventoryId"/>
+<property isimportant="false" name="collapsed"/>
+<boundary height="72" width="200" x="15" y="0"/>
+<resource guid="a4857680-ce13-4f21-9043-8bff7d2dcce7" id="i3dfdf373-d9b3-4f65-aae7-211cf1b9c59d" shared="true" type="device">
+<property isimportant="false" name="name">T2</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="utilizationType">INHERIT</property>
+<property isimportant="false" name="ilo_iconId"/>
+<property isimportant="false" name="iconURI">ilo://api/0/resource/icon?id=a4857680-ce13-4f21-9043-8bff7d2dcce7</property>
+<property isimportant="false" name="isIconVisible"/>
+<property isimportant="false" name="reservationTime">IMMEDIATE</property>
+<property isimportant="false" name="visibility">SHOW_TO_ALL</property>
+<property isimportant="false" name="hostResource_topologyResourceId">i5c69fde3-4776-49b2-b10b-8191abce440e</property>
+<property isimportant="false" name="hostResource_parentType">PARENT</property>
+<property isimportant="false" name="ilo_shape">RECTANGLE</property>
+<property isimportant="false" name="nestedCoordinates">A1</property>
+<property isimportant="false" name="color">WHITE</property>
+<property isimportant="false" name="borderColor">SILVER</property>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">template[T2]</extensions>
+<boundary height="72" width="200" x="0" y="0"/>
+<property name="inventoryName"/>
+</resource>
+</resource>
+</resource>
+</resource>
+</resources>
+<connectivity/>
+</body>
+</tbml>

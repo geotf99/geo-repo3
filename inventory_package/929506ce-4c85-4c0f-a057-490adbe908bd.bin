@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><tbml xmlns="http://www.teslaalliance.org/trs/tbml/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.teslaalliance.org/trs/tbml/1.0/tbml-core.xsd">
+<header>
+<name>New topology (11)</name>
+<description/>
+<property name="emulation" vendor="com.fnfr">enabled</property>
+</header>
+<illustration>
+<layer/>
+</illustration>
+<body>
+<resources>
+<resource guid="fea52e8b-8d75-455e-baa5-80751d9625c7" id="i4e17aed0-5e42-40ce-875c-7a6050f7a1e7" shared="true" type="device">
+<property isimportant="false" name="name">R1</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="utilizationType">INHERIT</property>
+<property isimportant="false" name="ilo_iconId">62bc1124-cf90-40b9-bf1f-745bbae1718f</property>
+<property isimportant="false" name="iconURI">ilo://api/repository/v2/asset/62bc1124-cf90-40b9-bf1f-745bbae1718f?rasterizedIconSize=64</property>
+<property isimportant="false" name="isIconVisible">true</property>
+<property isimportant="false" name="reservationTime">DEFERRED</property>
+<property isimportant="false" name="hostResource_topologyResourceId"/>
+<property isimportant="false" name="hostResource_parentType"/>
+<property isimportant="false" name="ilo_shape">RECTANGLE</property>
+<property isimportant="false" name="color">WHITE</property>
+<property isimportant="false" name="borderColor">SILVER</property>
+<propertyCollection name="Location Information" order="-100">
+<property description="Example:  Eng Lab 3" editable="false" id="Room" iscloudspecific="false" isimportant="false" name="Room" required="false" type="TEXT"/>
+<property description="Example:  San Jose - Site 2" editable="false" id="Facility" iscloudspecific="false" isimportant="false" name="Facility" required="false" type="TEXT"/>
+<property description="Example:  Rack 34-Chassis 3" editable="false" id="Floor Position" iscloudspecific="false" isimportant="false" name="Floor Position" required="false" type="TEXT"/>
+</propertyCollection>
+<propertyCollection name="Credentials" order="-100">
+<property description="" editable="false" id="username" iscloudspecific="false" isimportant="false" name="username" required="false" type="TEXT"/>
+<property description="" editable="false" id="password" iscloudspecific="false" isimportant="false" name="password" required="false" type="PASSWORD"/>
+</propertyCollection>
+<propertyCollection name="System Identification" order="-100">
+<property description="Example:  3D543HIH12" editable="false" id="Serial Number" iscloudspecific="false" isimportant="false" name="Serial Number" required="false" type="TEXT"/>
+<property description="Example:  Spirent" editable="false" id="Make" iscloudspecific="false" isimportant="false" name="Make" required="false" type="TEXT"/>
+<property description="Leave blank to use the embedded console server which does not require additional license. Provide IP address or FQDN for distributed console server (license required)" editable="false" id="Console server" iscloudspecific="false" isimportant="false" name="Console server" required="false" type="TEXT"/>
+<property description="Example:  Spirent Test Center, Avalanche, Landslide..., etc" editable="false" id="Model" iscloudspecific="false" isimportant="false" name="Model" required="false" type="TEXT"/>
+<property description="Hostname" editable="false" id="Hostname" iscloudspecific="false" isimportant="false" name="Hostname" required="false" type="TEXT"/>
+<property description="System address -- IPv4 or IPv6" editable="false" id="ipAddress" iscloudspecific="false" isimportant="false" name="ipAddress" required="false" type="TEXT"/>
+</propertyCollection>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">template[PC]</extensions>
+<boundary height="72" width="200" x="-440" y="168"/>
+<resource id="i79c87d03-9a75-43cd-85c4-5f2255a1f2f6" type="port">
+<property isimportant="false" name="name">P1</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="connectivity">any</property>
+<property isimportant="false" name="utilizationType">INHERIT</property>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">any</extensions>
+<property name="inventoryName"/>
+</resource>
+<property name="inventoryName"/>
+</resource>
+<resource guid="fea52e8b-8d75-455e-baa5-80751d9625c7" id="if25a1c1b-fcb6-45ce-9bba-f55a769c6696" shared="true" type="device">
+<property isimportant="false" name="name">R2</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="utilizationType">INHERIT</property>
+<property isimportant="false" name="ilo_iconId">62bc1124-cf90-40b9-bf1f-745bbae1718f</property>
+<property isimportant="false" name="iconURI">ilo://api/repository/v2/asset/62bc1124-cf90-40b9-bf1f-745bbae1718f?rasterizedIconSize=64</property>
+<property isimportant="false" name="isIconVisible">true</property>
+<property isimportant="false" name="reservationTime">IMMEDIATE</property>
+<property isimportant="false" name="hostResource_topologyResourceId"/>
+<property isimportant="false" name="hostResource_parentType"/>
+<property isimportant="false" name="ilo_shape">RECTANGLE</property>
+<property isimportant="false" name="color">WHITE</property>
+<property isimportant="false" name="borderColor">SILVER</property>
+<propertyCollection name="Location Information" order="-100">
+<property description="Example:  Eng Lab 3" editable="false" id="Room" iscloudspecific="false" isimportant="false" name="Room" required="false" type="TEXT"/>
+<property description="Example:  San Jose - Site 2" editable="false" id="Facility" iscloudspecific="false" isimportant="false" name="Facility" required="false" type="TEXT"/>
+<property description="Example:  Rack 34-Chassis 3" editable="false" id="Floor Position" iscloudspecific="false" isimportant="false" name="Floor Position" required="false" type="TEXT"/>
+</propertyCollection>
+<propertyCollection name="Credentials" order="-100">
+<property description="" editable="false" id="username" iscloudspecific="false" isimportant="false" name="username" required="false" type="TEXT"/>
+<property description="" editable="false" id="password" iscloudspecific="false" isimportant="false" name="password" required="false" type="PASSWORD"/>
+</propertyCollection>
+<propertyCollection name="System Identification" order="-100">
+<property description="Example:  3D543HIH12" editable="false" id="Serial Number" iscloudspecific="false" isimportant="false" name="Serial Number" required="false" type="TEXT"/>
+<property description="Example:  Spirent" editable="false" id="Make" iscloudspecific="false" isimportant="false" name="Make" required="false" type="TEXT"/>
+<property description="Leave blank to use the embedded console server which does not require additional license. Provide IP address or FQDN for distributed console server (license required)" editable="false" id="Console server" iscloudspecific="false" isimportant="false" name="Console server" required="false" type="TEXT"/>
+<property description="Example:  Spirent Test Center, Avalanche, Landslide..., etc" editable="false" id="Model" iscloudspecific="false" isimportant="false" name="Model" required="false" type="TEXT"/>
+<property description="Hostname" editable="false" id="Hostname" iscloudspecific="false" isimportant="false" name="Hostname" required="false" type="TEXT"/>
+<property description="System address -- IPv4 or IPv6" editable="false" id="ipAddress" iscloudspecific="false" isimportant="false" name="ipAddress" required="false" type="TEXT"/>
+</propertyCollection>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">template[PC]</extensions>
+<boundary height="72" width="200" x="-100" y="168"/>
+<resource id="i0e03dc40-0d29-45c3-886e-d1b684758d5f" type="port">
+<property isimportant="false" name="name">P1</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="connectivity">any</property>
+<property isimportant="false" name="utilizationType">INHERIT</property>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">any</extensions>
+<property name="inventoryName"/>
+</resource>
+<property name="inventoryName"/>
+</resource>
+</resources>
+<connectivity>
+<link id="i5980d267-042c-491e-a19c-c5602ab49dc2">
+<property isimportant="false" name="name">Link</property>
+<property isimportant="false" name="type">Ethernet</property>
+<property isimportant="false" name="lineStyle">LINEAL</property>
+<property isimportant="false" name="abstractResourceId"/>
+<property isimportant="false" name="abstractResourceName"/>
+<endpoint direction="bidirectional" id="i79c87d03-9a75-43cd-85c4-5f2255a1f2f6"/>
+<endpoint direction="bidirectional" id="i0e03dc40-0d29-45c3-886e-d1b684758d5f"/>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition"/>
+<propertyCollection name="connectionType" order="0">
+<property isimportant="false" name="id">146e4da8-b956-37f6-916a-91fd3184a510</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="kind">L1</property>
+<property isimportant="false" name="shortcut">Eth</property>
+</propertyCollection>
+<propertyCollection name="view" order="0">
+<property isimportant="false" name="color">GRAY</property>
+<property isimportant="false" name="width">2</property>
+</propertyCollection>
+</link>
+</connectivity>
+</body>
+</tbml>
