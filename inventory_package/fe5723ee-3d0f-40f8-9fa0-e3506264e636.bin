@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><tbml xmlns="http://www.teslaalliance.org/trs/tbml/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.teslaalliance.org/trs/tbml/1.0/tbml-core.xsd">
+<header>
+<name>import topology (2)</name>
+<description/>
+<property name="emulation" vendor="com.fnfr">enabled</property>
+</header>
+<illustration>
+<layer/>
+</illustration>
+<body>
+<resources>
+<resource guid="i186bd853-b5b3-46e1-93f0-4116d5de4afb" id="i186bd853-b5b3-46e1-93f0-4116d5de4afb" shared="true" type="device">
+<property isimportant="false" name="name">pc</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="utilizationType">INHERIT</property>
+<property isimportant="false" name="ilo_iconId"/>
+<property isimportant="false" name="iconURI">assets/img/webte/device.png</property>
+<property isimportant="false" name="isIconVisible">true</property>
+<property isimportant="false" name="reservationTime">IMMEDIATE</property>
+<property isimportant="false" name="hostResource_topologyResourceId"/>
+<property isimportant="false" name="hostResource_parentType"/>
+<property isimportant="false" name="ilo_shape">RECTANGLE</property>
+<property isimportant="false" name="color">WHITE</property>
+<property isimportant="false" name="borderColor">SILVER</property>
+<propertyCollection name="System Identification" order="undefined">
+<property editable="false" id="f9956b93-d2cd-6889-5bd9-b08dc66336d5" iscloudspecific="false" isimportant="false" name="ipAddress" required="false" type="text" valuelabel=""/>
+<property editable="false" id="fc803e63-d086-cf01-c2ff-2720038f9249" iscloudspecific="false" isimportant="false" name="Hostname" required="false" type="text" valuelabel=""/>
+<property editable="false" id="678da4da-1b84-8ac3-6f90-9695731bd683" iscloudspecific="false" isimportant="false" name="Make" required="false" type="text" valuelabel=""/>
+<property editable="false" id="a2dc54ba-4d99-b89a-4797-6b5170f16573" iscloudspecific="false" isimportant="false" name="Model" required="false" type="text" valuelabel=""/>
+<property editable="false" id="706e47f7-9699-6660-dbc5-29403a202287" iscloudspecific="false" isimportant="false" name="Serial Number" required="false" type="text" valuelabel=""/>
+<property editable="false" id="93710a3d-94d7-dd77-6755-f4cbe19ef6d1" iscloudspecific="false" isimportant="false" name="Console server" required="false" type="text" valuelabel=""/>
+</propertyCollection>
+<propertyCollection name="Location Information" order="undefined">
+<property editable="false" id="2808e83d-b882-e191-664c-ac43ba0719b4" iscloudspecific="false" isimportant="false" name="Facility" required="false" type="text" valuelabel=""/>
+<property editable="false" id="004118cb-50f6-1a52-2ae6-02fa118b3ca1" iscloudspecific="false" isimportant="false" name="Room" required="false" type="text" valuelabel=""/>
+<property editable="false" id="12b3109e-ae60-ca3a-c7b1-b919002547a8" iscloudspecific="false" isimportant="false" name="Floor Position" required="false" type="text" valuelabel=""/>
+</propertyCollection>
+<propertyCollection name="Credentials" order="undefined">
+<property editable="false" id="b1c1011e-3301-0a57-7c8f-e33ca5dcd54b" iscloudspecific="false" isimportant="false" name="username" required="false" type="text" valuelabel=""/>
+<property editable="false" id="c7a2404c-34b5-1d11-0802-2d1a6ef5e661" iscloudspecific="false" isimportant="false" name="password" required="false" type="password" valuelabel=""/>
+</propertyCollection>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">template[PC] and Name='PC1-tag1'</extensions>
+<boundary height="72" width="200" x="-100" y="48"/>
+<property name="inventoryName"/>
+</resource>
+</resources>
+<connectivity/>
+</body>
+</tbml>
