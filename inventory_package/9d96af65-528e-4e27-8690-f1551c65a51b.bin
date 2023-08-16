@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?><tbml xmlns="http://www.teslaalliance.org/trs/tbml/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.teslaalliance.org/trs/tbml/1.0/tbml-core.xsd">
+<header>
+<name>New topology (13)</name>
+<description/>
+<property name="emulation" vendor="com.fnfr">enabled</property>
+</header>
+<illustration>
+<layer/>
+</illustration>
+<body>
+<resources>
+<resource guid="V1:VIRTUAL_MACHINE:APPLICATION:88a3eeb7-eccc-49ce-a23c-114db9b7fd5f::" id="iafc7236a-916a-4940-a200-36c0fa758914" shared="false" type="virtual_machine">
+<property isimportant="false" name="name">Virtual Machine123asdasda</property>
+<property isimportant="false" name="description">A virtual machine is an isolated guest operating system installation within a normal host operating system.</property>
+<property isimportant="false" name="utilizationType">EXCLUSIVE</property>
+<property isimportant="false" name="ilo_iconId"/>
+<property isimportant="false" name="iconURI">ilo://api/0/resource/icon?id=V1:VIRTUAL_MACHINE:APPLICATION:88a3eeb7-eccc-49ce-a23c-114db9b7fd5f::</property>
+<property isimportant="false" name="isIconVisible"/>
+<property isimportant="false" name="ilo_vmTemplateId"/>
+<property isimportant="false" name="ilo_shape">RECTANGLE</property>
+<property isimportant="false" name="color">WHITE</property>
+<property isimportant="false" name="borderColor">SILVER</property>
+<property isimportant="false" name="cloudObjectOwnershipType">APPLICATION</property>
+<propertyCollection name="Initial Configuration" order="undefined">
+<property description="Current status of object." editable="false" id="statusId" iscloudspecific="false" isimportant="false" name="Status" required="false" type="TEXT"/>
+<property description="Configuration information or scripts to use upon launch." editable="true" id="customScriptId" iscloudspecific="false" isimportant="false" name="Customization script" required="false" type="TEXT_AREA"/>
+<property description="Configure IP packets to go through the Router that is connected to the same network. Note: This setting only works for Linux machines." editable="true" id="configureL3RoutesId" iscloudspecific="false" isimportant="false" name="Configure L3 routes" required="true" type="BOOLEAN">true</property>
+</propertyCollection>
+<propertyCollection name="Hardware Configuration" order="undefined">
+<property description="The hardware profile reference for the desired CPU Cores, RAM and disk size for your virtual machine." editable="true" id="hardwareProfileId" iscloudspecific="true" isimportant="false" name="Hardware profile" required="false" type="DROP_DOWN_LIST"/>
+<property description="Minimum CPU cores for your virtual machine." editable="true" id="minCpuCoresId" iscloudspecific="false" isimportant="false" name="Min CPU cores" required="false" type="INTEGER"/>
+<property description="Minimum RAM in MB for your virtual machine." editable="true" id="minRamMbId" iscloudspecific="false" isimportant="false" name="Min RAM MB" required="false" type="INTEGER"/>
+<property description="Min disc in GB for your virtual machine." editable="true" id="minDiscGbId" iscloudspecific="false" isimportant="false" name="Min disc GB" required="false" type="INTEGER"/>
+</propertyCollection>
+<propertyCollection name="Image Configuration" order="undefined">
+<property description="The image reference for the desired image for your server instance." editable="true" id="imageId" iscloudspecific="true" isimportant="false" name="Image" required="false" type="DROP_DOWN_LIST" valuelabel="TinyCore099">eyJ2YWx1ZSI6InZtLTI1OTk4NyIsInR5cGUiOiJWaXJ0dWFsTWFjaGluZSJ9</property>
+<property description="Search string for the virtual machine image by the operating system family." editable="true" id="osFamilyMatchId" iscloudspecific="false" isimportant="false" name="OS family" required="false" type="DROP_DOWN_LIST"/>
+<property description="Search string for the virtual machine image by the image name (full or partial regex matching)." editable="true" id="imageNameMatchId" iscloudspecific="false" isimportant="false" name="Image name" required="false" type="TEXT"/>
+<property description="Search string for the virtual machine image by the image custom properties (full or partial regex matching)." editable="true" id="customPropertiesMatchId" iscloudspecific="false" isimportant="false" name="Custom properties match" required="false" type="TEXT"/>
+</propertyCollection>
+<propertyCollection name="General" order="undefined">
+<property description="" editable="true" id="cloudId" iscloudspecific="false" isimportant="false" name="Cloud" order="-100" required="true" type="DROP_DOWN_LIST" valuelabel="qa-vcenter7">88a3eeb7-eccc-49ce-a23c-114db9b7fd5f</property>
+</propertyCollection>
+<boundary height="72" width="200" x="220" y="359"/>
+<resource guid="V1:VIRTUAL_MACHINE_PORT:APPLICATION:88a3eeb7-eccc-49ce-a23c-114db9b7fd5f::" id="i50605442-a326-4e73-af3e-991d44563fce" type="virtual_port">
+<property isimportant="false" name="name">vnic 1</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="utilizationType">EXCLUSIVE</property>
+<property isimportant="false" name="cloudObjectOwnershipType">APPLICATION</property>
+<propertyCollection name="Initial Configuration" order="undefined">
+<property description="Current status of object." editable="false" id="statusId" iscloudspecific="false" isimportant="false" name="Status" required="false" type="TEXT"/>
+</propertyCollection>
+<propertyCollection name="Networking" order="undefined">
+<property description="The MAC address. If you do not specify a value, the MAC address will be assigned automatically." editable="true" id="macAddressId" iscloudspecific="false" isimportant="false" name="MAC address" required="false" type="MAC_ADDRESS"/>
+<property description="Internal IP address used for communication between instances in the same cloud." editable="true" id="privateIpId" iscloudspecific="false" isimportant="true" name="IP address" required="false" type="IP_ADDRESS"/>
+<property description="Public IP that gets allocated from the public network IP pool." editable="false" id="publicIpId" iscloudspecific="false" isimportant="true" name="Public IP" required="false" type="IP_ADDRESS"/>
+</propertyCollection>
+</resource>
+<resource guid="V1:VIRTUAL_MACHINE_PORT:APPLICATION:88a3eeb7-eccc-49ce-a23c-114db9b7fd5f::" id="ia15e754a-814e-4d7a-b429-f53d87bcc15b" type="virtual_port">
+<property isimportant="false" name="name">vnic 2</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="utilizationType">EXCLUSIVE</property>
+<property isimportant="false" name="cloudObjectOwnershipType">APPLICATION</property>
+<propertyCollection name="Initial Configuration" order="undefined">
+<property description="Current status of object." editable="false" id="statusId" iscloudspecific="false" isimportant="false" name="Status" required="false" type="TEXT"/>
+</propertyCollection>
+<propertyCollection name="Networking" order="undefined">
+<property description="The MAC address. If you do not specify a value, the MAC address will be assigned automatically." editable="true" id="macAddressId" iscloudspecific="false" isimportant="false" name="MAC address" required="false" type="MAC_ADDRESS"/>
+<property description="Internal IP address used for communication between instances in the same cloud." editable="true" id="privateIpId" iscloudspecific="false" isimportant="true" name="IP address" required="false" type="IP_ADDRESS"/>
+<property description="Public IP that gets allocated from the public network IP pool." editable="false" id="publicIpId" iscloudspecific="false" isimportant="true" name="Public IP" required="false" type="IP_ADDRESS"/>
+</propertyCollection>
+</resource>
+</resource>
+<resource guid="V1:VIRTUAL_MACHINE:APPLICATION:88a3eeb7-eccc-49ce-a23c-114db9b7fd5f::" id="i8d79ec34-6fba-4a02-824a-001b70ed587e" shared="false" type="virtual_machine">
+<property isimportant="false" name="name">Virtual Machine123 (3)1231321</property>
+<property isimportant="false" name="description">A virtual machine is an isolated guest operating system installation within a normal host operating system.</property>
+<property isimportant="false" name="utilizationType">EXCLUSIVE</property>
+<property isimportant="false" name="ilo_iconId"/>
+<property isimportant="false" name="iconURI">ilo://api/0/resource/icon?id=V1:VIRTUAL_MACHINE:APPLICATION:88a3eeb7-eccc-49ce-a23c-114db9b7fd5f::</property>
+<property isimportant="false" name="isIconVisible"/>
+<property isimportant="false" name="ilo_vmTemplateId"/>
+<property isimportant="false" name="ilo_shape">RECTANGLE</property>
+<property isimportant="false" name="color">WHITE</property>
+<property isimportant="false" name="borderColor">SILVER</property>
+<property isimportant="false" name="cloudObjectOwnershipType">APPLICATION</property>
+<propertyCollection name="Initial Configuration" order="undefined">
+<property description="Current status of object." editable="false" id="statusId" iscloudspecific="false" isimportant="false" name="Status" required="false" type="TEXT"/>
+<property description="Configuration information or scripts to use upon launch." editable="true" id="customScriptId" iscloudspecific="false" isimportant="false" name="Customization script" required="false" type="TEXT_AREA"/>
+<property description="Configure IP packets to go through the Router that is connected to the same network. Note: This setting only works for Linux machines." editable="true" id="configureL3RoutesId" iscloudspecific="false" isimportant="false" name="Configure L3 routes" required="true" type="BOOLEAN">true</property>
+</propertyCollection>
+<propertyCollection name="Hardware Configuration" order="undefined">
+<property description="The hardware profile reference for the desired CPU Cores, RAM and disk size for your virtual machine." editable="true" id="hardwareProfileId" iscloudspecific="true" isimportant="false" name="Hardware profile" required="false" type="DROP_DOWN_LIST"/>
+<property description="Minimum CPU cores for your virtual machine." editable="true" id="minCpuCoresId" iscloudspecific="false" isimportant="false" name="Min CPU cores" required="false" type="INTEGER"/>
+<property description="Minimum RAM in MB for your virtual machine." editable="true" id="minRamMbId" iscloudspecific="false" isimportant="false" name="Min RAM MB" required="false" type="INTEGER"/>
+<property description="Min disc in GB for your virtual machine." editable="true" id="minDiscGbId" iscloudspecific="false" isimportant="false" name="Min disc GB" required="false" type="INTEGER"/>
+</propertyCollection>
+<propertyCollection name="Image Configuration" order="undefined">
+<property description="The image reference for the desired image for your server instance." editable="true" id="imageId" iscloudspecific="true" isimportant="false" name="Image" required="false" type="DROP_DOWN_LIST" valuelabel="TinyCore099">eyJ2YWx1ZSI6InZtLTI1OTk4NyIsInR5cGUiOiJWaXJ0dWFsTWFjaGluZSJ9</property>
+<property description="Search string for the virtual machine image by the operating system family." editable="true" id="osFamilyMatchId" iscloudspecific="false" isimportant="false" name="OS family" required="false" type="DROP_DOWN_LIST"/>
+<property description="Search string for the virtual machine image by the image name (full or partial regex matching)." editable="true" id="imageNameMatchId" iscloudspecific="false" isimportant="false" name="Image name" required="false" type="TEXT"/>
+<property description="Search string for the virtual machine image by the image custom properties (full or partial regex matching)." editable="true" id="customPropertiesMatchId" iscloudspecific="false" isimportant="false" name="Custom properties match" required="false" type="TEXT"/>
+</propertyCollection>
+<propertyCollection name="General" order="undefined">
+<property description="" editable="true" id="cloudId" iscloudspecific="false" isimportant="false" name="Cloud" order="-100" required="true" type="DROP_DOWN_LIST" valuelabel="qa-vcenter7">88a3eeb7-eccc-49ce-a23c-114db9b7fd5f</property>
+</propertyCollection>
+<boundary height="72" width="200" x="640" y="523"/>
+<resource guid="V1:VIRTUAL_MACHINE_PORT:APPLICATION:88a3eeb7-eccc-49ce-a23c-114db9b7fd5f::" id="id5666c89-8538-4358-893e-b4a671a33a3f" type="virtual_port">
+<property isimportant="false" name="name">vnic 1</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="utilizationType">EXCLUSIVE</property>
+<property isimportant="false" name="cloudObjectOwnershipType">APPLICATION</property>
+<propertyCollection name="Initial Configuration" order="undefined">
+<property description="Current status of object." editable="false" id="statusId" iscloudspecific="false" isimportant="false" name="Status" required="false" type="TEXT"/>
+</propertyCollection>
+<propertyCollection name="Networking" order="undefined">
+<property description="The MAC address. If you do not specify a value, the MAC address will be assigned automatically." editable="true" id="macAddressId" iscloudspecific="false" isimportant="false" name="MAC address" required="false" type="MAC_ADDRESS"/>
+<property description="Internal IP address used for communication between instances in the same cloud." editable="true" id="privateIpId" iscloudspecific="false" isimportant="true" name="IP address" required="false" type="IP_ADDRESS"/>
+<property description="Public IP that gets allocated from the public network IP pool." editable="false" id="publicIpId" iscloudspecific="false" isimportant="true" name="Public IP" required="false" type="IP_ADDRESS"/>
+</propertyCollection>
+</resource>
+</resource>
+<resource guid="V1:VIRTUAL_MACHINE:APPLICATION:88a3eeb7-eccc-49ce-a23c-114db9b7fd5f::" id="i7877addd-01b2-4592-b65b-ab7c22158b6e" shared="false" type="virtual_machine">
+<property isimportant="false" name="name">Virtual Machine123 (2)1231231</property>
+<property isimportant="false" name="description">A virtual machine is an isolated guest operating system installation within a normal host operating system.</property>
+<property isimportant="false" name="utilizationType">EXCLUSIVE</property>
+<property isimportant="false" name="ilo_iconId"/>
+<property isimportant="false" name="iconURI">ilo://api/0/resource/icon?id=V1:VIRTUAL_MACHINE:APPLICATION:88a3eeb7-eccc-49ce-a23c-114db9b7fd5f::</property>
+<property isimportant="false" name="isIconVisible"/>
+<property isimportant="false" name="ilo_vmTemplateId"/>
+<property isimportant="false" name="ilo_shape">RECTANGLE</property>
+<property isimportant="false" name="color">WHITE</property>
+<property isimportant="false" name="borderColor">SILVER</property>
+<property isimportant="false" name="cloudObjectOwnershipType">APPLICATION</property>
+<propertyCollection name="Initial Configuration" order="undefined">
+<property description="Current status of object." editable="false" id="statusId" iscloudspecific="false" isimportant="false" name="Status" required="false" type="TEXT"/>
+<property description="Configuration information or scripts to use upon launch." editable="true" id="customScriptId" iscloudspecific="false" isimportant="false" name="Customization script" required="false" type="TEXT_AREA"/>
+<property description="Configure IP packets to go through the Router that is connected to the same network. Note: This setting only works for Linux machines." editable="true" id="configureL3RoutesId" iscloudspecific="false" isimportant="false" name="Configure L3 routes" required="true" type="BOOLEAN">true</property>
+</propertyCollection>
+<propertyCollection name="Hardware Configuration" order="undefined">
+<property description="The hardware profile reference for the desired CPU Cores, RAM and disk size for your virtual machine." editable="true" id="hardwareProfileId" iscloudspecific="true" isimportant="false" name="Hardware profile" required="false" type="DROP_DOWN_LIST"/>
+<property description="Minimum CPU cores for your virtual machine." editable="true" id="minCpuCoresId" iscloudspecific="false" isimportant="false" name="Min CPU cores" required="false" type="INTEGER"/>
+<property description="Minimum RAM in MB for your virtual machine." editable="true" id="minRamMbId" iscloudspecific="false" isimportant="false" name="Min RAM MB" required="false" type="INTEGER"/>
+<property description="Min disc in GB for your virtual machine." editable="true" id="minDiscGbId" iscloudspecific="false" isimportant="false" name="Min disc GB" required="false" type="INTEGER"/>
+</propertyCollection>
+<propertyCollection name="Image Configuration" order="undefined">
+<property description="The image reference for the desired image for your server instance." editable="true" id="imageId" iscloudspecific="true" isimportant="false" name="Image" required="false" type="DROP_DOWN_LIST" valuelabel="TinyCore099">eyJ2YWx1ZSI6InZtLTI1OTk4NyIsInR5cGUiOiJWaXJ0dWFsTWFjaGluZSJ9</property>
+<property description="Search string for the virtual machine image by the operating system family." editable="true" id="osFamilyMatchId" iscloudspecific="false" isimportant="false" name="OS family" required="false" type="DROP_DOWN_LIST"/>
+<property description="Search string for the virtual machine image by the image name (full or partial regex matching)." editable="true" id="imageNameMatchId" iscloudspecific="false" isimportant="false" name="Image name" required="false" type="TEXT"/>
+<property description="Search string for the virtual machine image by the image custom properties (full or partial regex matching)." editable="true" id="customPropertiesMatchId" iscloudspecific="false" isimportant="false" name="Custom properties match" required="false" type="TEXT"/>
+</propertyCollection>
+<propertyCollection name="General" order="undefined">
+<property description="" editable="true" id="cloudId" iscloudspecific="false" isimportant="false" name="Cloud" order="-100" required="true" type="DROP_DOWN_LIST" valuelabel="qa-vcenter7">88a3eeb7-eccc-49ce-a23c-114db9b7fd5f</property>
+</propertyCollection>
+<boundary height="72" width="200" x="430" y="441"/>
+<resource guid="V1:VIRTUAL_MACHINE_PORT:APPLICATION:88a3eeb7-eccc-49ce-a23c-114db9b7fd5f::" id="id81abd52-dac9-49b5-845c-229ccccade6f" type="virtual_port">
+<property isimportant="false" name="name">vnic 2</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="utilizationType">EXCLUSIVE</property>
+<property isimportant="false" name="cloudObjectOwnershipType">APPLICATION</property>
+<propertyCollection name="Initial Configuration" order="undefined">
+<property description="Current status of object." editable="false" id="statusId" iscloudspecific="false" isimportant="false" name="Status" required="false" type="TEXT"/>
+</propertyCollection>
+<propertyCollection name="Networking" order="undefined">
+<property description="The MAC address. If you do not specify a value, the MAC address will be assigned automatically." editable="true" id="macAddressId" iscloudspecific="false" isimportant="false" name="MAC address" required="false" type="MAC_ADDRESS"/>
+<property description="Internal IP address used for communication between instances in the same cloud." editable="true" id="privateIpId" iscloudspecific="false" isimportant="true" name="IP address" required="false" type="IP_ADDRESS"/>
+<property description="Public IP that gets allocated from the public network IP pool." editable="false" id="publicIpId" iscloudspecific="false" isimportant="true" name="Public IP" required="false" type="IP_ADDRESS"/>
+</propertyCollection>
+</resource>
+<resource guid="V1:VIRTUAL_MACHINE_PORT:APPLICATION:88a3eeb7-eccc-49ce-a23c-114db9b7fd5f::" id="i678264bc-32b2-49e5-9cb3-dbad67168670" type="virtual_port">
+<property isimportant="false" name="name">vnic 1</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="utilizationType">EXCLUSIVE</property>
+<property isimportant="false" name="cloudObjectOwnershipType">APPLICATION</property>
+<propertyCollection name="Initial Configuration" order="undefined">
+<property description="Current status of object." editable="false" id="statusId" iscloudspecific="false" isimportant="false" name="Status" required="false" type="TEXT"/>
+</propertyCollection>
+<propertyCollection name="Networking" order="undefined">
+<property description="The MAC address. If you do not specify a value, the MAC address will be assigned automatically." editable="true" id="macAddressId" iscloudspecific="false" isimportant="false" name="MAC address" required="false" type="MAC_ADDRESS"/>
+<property description="Internal IP address used for communication between instances in the same cloud." editable="true" id="privateIpId" iscloudspecific="false" isimportant="true" name="IP address" required="false" type="IP_ADDRESS"/>
+<property description="Public IP that gets allocated from the public network IP pool." editable="false" id="publicIpId" iscloudspecific="false" isimportant="true" name="Public IP" required="false" type="IP_ADDRESS"/>
+</propertyCollection>
+</resource>
+</resource>
+<resource guid="V1:VIRTUAL_NETWORK:APPLICATION:88a3eeb7-eccc-49ce-a23c-114db9b7fd5f::" id="i1c8950e7-78c4-4ead-8d7e-ebdce9712e74" shared="false" type="virtual_network">
+<property isimportant="false" name="name">Virtual Networ123123k (2)</property>
+<property isimportant="false" name="description">An isolated Layer2 segment, analogous to VLAN in the physical network.</property>
+<property isimportant="false" name="utilizationType">SHARED</property>
+<property isimportant="false" name="color">WHITE</property>
+<property isimportant="false" name="borderColor">SILVER</property>
+<property isimportant="false" name="cloudObjectOwnershipType">APPLICATION</property>
+<propertyCollection name="Initial Configuration" order="undefined">
+<property description="Current status of object." editable="false" id="statusId" iscloudspecific="false" isimportant="false" name="Status" required="false" type="TEXT"/>
+</propertyCollection>
+<propertyCollection name="Networking" order="undefined">
+<property description="The network range in CIDR notation. Example: 192.168.1.0/24." editable="true" id="cidrId" iscloudspecific="false" isimportant="true" name="Network range (CIDR)" required="false" type="CIDR"/>
+<property description="The IP version: IPv4 or IPv6." editable="true" id="ipVersionId" iscloudspecific="false" isimportant="false" name="IP version" required="true" type="DROP_DOWN_LIST" valuelabel="IPV4">IPV4</property>
+<property description="The gateway IP address." editable="true" id="gatewayId" iscloudspecific="false" isimportant="false" name="Gateway address" required="false" type="IP_ADDRESS"/>
+<property description="Whether DHCP is enabled or disabled for the network." editable="true" id="dhcpEnabledId" iscloudspecific="false" isimportant="false" name="DHCP enabled" required="true" type="BOOLEAN">true</property>
+<property description="One or more DNS servers for network delimited by &quot;,&quot;." editable="true" id="dnsServerId" iscloudspecific="false" isimportant="false" name="DNS server" required="false" type="IP_ADDRESS"/>
+</propertyCollection>
+<propertyCollection name="General" order="undefined">
+<property description="" editable="true" id="cloudId" iscloudspecific="false" isimportant="false" name="Cloud" order="-100" required="true" type="DROP_DOWN_LIST" valuelabel="qa-vcenter7">88a3eeb7-eccc-49ce-a23c-114db9b7fd5f</property>
+</propertyCollection>
+<boundary height="120" width="160" x="280" y="595"/>
+</resource>
+<resource guid="V1:VIRTUAL_NETWORK:APPLICATION:88a3eeb7-eccc-49ce-a23c-114db9b7fd5f::" id="ie1e61519-2501-433d-8863-3d122975fe40" shared="false" type="virtual_network">
+<property isimportant="false" name="name">Virtual Network1231</property>
+<property isimportant="false" name="description">An isolated Layer2 segment, analogous to VLAN in the physical network.</property>
+<property isimportant="false" name="utilizationType">SHARED</property>
+<property isimportant="false" name="color">WHITE</property>
+<property isimportant="false" name="borderColor">SILVER</property>
+<property isimportant="false" name="cloudObjectOwnershipType">APPLICATION</property>
+<propertyCollection name="Initial Configuration" order="undefined">
+<property description="Current status of object." editable="false" id="statusId" iscloudspecific="false" isimportant="false" name="Status" required="false" type="TEXT"/>
+</propertyCollection>
+<propertyCollection name="Networking" order="undefined">
+<property description="The network range in CIDR notation. Example: 192.168.1.0/24." editable="true" id="cidrId" iscloudspecific="false" isimportant="true" name="Network range (CIDR)" required="false" type="CIDR"/>
+<property description="The IP version: IPv4 or IPv6." editable="true" id="ipVersionId" iscloudspecific="false" isimportant="false" name="IP version" required="true" type="DROP_DOWN_LIST" valuelabel="IPV4">IPV4</property>
+<property description="The gateway IP address." editable="true" id="gatewayId" iscloudspecific="false" isimportant="false" name="Gateway address" required="false" type="IP_ADDRESS"/>
+<property description="Whether DHCP is enabled or disabled for the network." editable="true" id="dhcpEnabledId" iscloudspecific="false" isimportant="false" name="DHCP enabled" required="true" type="BOOLEAN">true</property>
+<property description="One or more DNS servers for network delimited by &quot;,&quot;." editable="true" id="dnsServerId" iscloudspecific="false" isimportant="false" name="DNS server" required="false" type="IP_ADDRESS"/>
+</propertyCollection>
+<propertyCollection name="General" order="undefined">
+<property description="" editable="true" id="cloudId" iscloudspecific="false" isimportant="false" name="Cloud" order="-100" required="true" type="DROP_DOWN_LIST" valuelabel="qa-vcenter7">88a3eeb7-eccc-49ce-a23c-114db9b7fd5f</property>
+</propertyCollection>
+<boundary height="120" width="160" x="-20" y="575"/>
+</resource>
+<resource guid="V1:VIRTUAL_NETWORK:APPLICATION:88a3eeb7-eccc-49ce-a23c-114db9b7fd5f::" id="idbdcc5ee-f694-4b59-a01a-fa29c0c06631" shared="false" type="virtual_network">
+<property isimportant="false" name="name">Virtual Net1231231work (3)</property>
+<property isimportant="false" name="description">An isolated Layer2 segment, analogous to VLAN in the physical network.</property>
+<property isimportant="false" name="utilizationType">SHARED</property>
+<property isimportant="false" name="color">WHITE</property>
+<property isimportant="false" name="borderColor">SILVER</property>
+<property isimportant="false" name="cloudObjectOwnershipType">APPLICATION</property>
+<propertyCollection name="Initial Configuration" order="undefined">
+<property description="Current status of object." editable="false" id="statusId" iscloudspecific="false" isimportant="false" name="Status" required="false" type="TEXT"/>
+</propertyCollection>
+<propertyCollection name="Networking" order="undefined">
+<property description="The network range in CIDR notation. Example: 192.168.1.0/24." editable="true" id="cidrId" iscloudspecific="false" isimportant="true" name="Network range (CIDR)" required="false" type="CIDR"/>
+<property description="The IP version: IPv4 or IPv6." editable="true" id="ipVersionId" iscloudspecific="false" isimportant="false" name="IP version" required="true" type="DROP_DOWN_LIST" valuelabel="IPV4">IPV4</property>
+<property description="The gateway IP address." editable="true" id="gatewayId" iscloudspecific="false" isimportant="false" name="Gateway address" required="false" type="IP_ADDRESS"/>
+<property description="Whether DHCP is enabled or disabled for the network." editable="true" id="dhcpEnabledId" iscloudspecific="false" isimportant="false" name="DHCP enabled" required="true" type="BOOLEAN">true</property>
+<property description="One or more DNS servers for network delimited by &quot;,&quot;." editable="true" id="dnsServerId" iscloudspecific="false" isimportant="false" name="DNS server" required="false" type="IP_ADDRESS"/>
+</propertyCollection>
+<propertyCollection name="General" order="undefined">
+<property description="" editable="true" id="cloudId" iscloudspecific="false" isimportant="false" name="Cloud" order="-100" required="true" type="DROP_DOWN_LIST" valuelabel="qa-vcenter7">88a3eeb7-eccc-49ce-a23c-114db9b7fd5f</property>
+</propertyCollection>
+<boundary height="120" width="160" x="460" y="780"/>
+</resource>
+</resources>
+<connectivity>
+<link id="id6982b7e-4d43-4a93-8aef-f420f53c7cb5">
+<property isimportant="false" name="name">Link</property>
+<property isimportant="false" name="type">Virtual</property>
+<property isimportant="false" name="lineStyle">LINEAL</property>
+<property isimportant="false" name="abstractResourceId"/>
+<property isimportant="false" name="abstractResourceName"/>
+<endpoint direction="bidirectional" id="i50605442-a326-4e73-af3e-991d44563fce"/>
+<endpoint direction="bidirectional" id="ie1e61519-2501-433d-8863-3d122975fe40"/>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition"/>
+<propertyCollection name="connectionType" order="0">
+<property isimportant="false" name="id">563ca2fa-ebe7-7649-f69d-5c3a26196a4d</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="kind">VIRTUAL</property>
+<property isimportant="false" name="shortcut">Virt</property>
+</propertyCollection>
+<propertyCollection name="view" order="0">
+<property isimportant="false" name="color">GRAY</property>
+<property isimportant="false" name="width">2</property>
+</propertyCollection>
+</link>
+<link id="i0c79634e-7bae-4de7-8949-15c671eef9d0">
+<property isimportant="false" name="name">Link 2</property>
+<property isimportant="false" name="type">Virtual</property>
+<property isimportant="false" name="lineStyle">LINEAL</property>
+<property isimportant="false" name="abstractResourceId"/>
+<property isimportant="false" name="abstractResourceName"/>
+<endpoint direction="bidirectional" id="ia15e754a-814e-4d7a-b429-f53d87bcc15b"/>
+<endpoint direction="bidirectional" id="i1c8950e7-78c4-4ead-8d7e-ebdce9712e74"/>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition"/>
+<propertyCollection name="connectionType" order="0">
+<property isimportant="false" name="id">563ca2fa-ebe7-7649-f69d-5c3a26196a4d</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="kind">VIRTUAL</property>
+<property isimportant="false" name="shortcut">Virt</property>
+</propertyCollection>
+<propertyCollection name="view" order="0">
+<property isimportant="false" name="color">GRAY</property>
+<property isimportant="false" name="width">2</property>
+</propertyCollection>
+</link>
+<link id="i880a18c4-7cf2-48ec-80d4-a436c41a234d">
+<property isimportant="false" name="name">Link 3</property>
+<property isimportant="false" name="type">Virtual</property>
+<property isimportant="false" name="lineStyle">LINEAL</property>
+<property isimportant="false" name="abstractResourceId"/>
+<property isimportant="false" name="abstractResourceName"/>
+<endpoint direction="bidirectional" id="i678264bc-32b2-49e5-9cb3-dbad67168670"/>
+<endpoint direction="bidirectional" id="i1c8950e7-78c4-4ead-8d7e-ebdce9712e74"/>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition"/>
+<propertyCollection name="connectionType" order="0">
+<property isimportant="false" name="id">563ca2fa-ebe7-7649-f69d-5c3a26196a4d</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="kind">VIRTUAL</property>
+<property isimportant="false" name="shortcut">Virt</property>
+</propertyCollection>
+<propertyCollection name="view" order="0">
+<property isimportant="false" name="color">GRAY</property>
+<property isimportant="false" name="width">2</property>
+</propertyCollection>
+</link>
+<link id="ia007f66a-50f1-4247-8525-0811c9265c2d">
+<property isimportant="false" name="name">Link 4</property>
+<property isimportant="false" name="type">Virtual</property>
+<property isimportant="false" name="lineStyle">LINEAL</property>
+<property isimportant="false" name="abstractResourceId"/>
+<property isimportant="false" name="abstractResourceName"/>
+<endpoint direction="bidirectional" id="id81abd52-dac9-49b5-845c-229ccccade6f"/>
+<endpoint direction="bidirectional" id="idbdcc5ee-f694-4b59-a01a-fa29c0c06631"/>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition"/>
+<propertyCollection name="connectionType" order="0">
+<property isimportant="false" name="id">563ca2fa-ebe7-7649-f69d-5c3a26196a4d</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="kind">VIRTUAL</property>
+<property isimportant="false" name="shortcut">Virt</property>
+</propertyCollection>
+<propertyCollection name="view" order="0">
+<property isimportant="false" name="color">GRAY</property>
+<property isimportant="false" name="width">2</property>
+</propertyCollection>
+</link>
+<link id="ief4ccc88-8819-4503-bae6-2e8e6024c022">
+<property isimportant="false" name="name">Link 5</property>
+<property isimportant="false" name="type">Virtual</property>
+<property isimportant="false" name="lineStyle">LINEAL</property>
+<property isimportant="false" name="abstractResourceId"/>
+<property isimportant="false" name="abstractResourceName"/>
+<endpoint direction="bidirectional" id="id5666c89-8538-4358-893e-b4a671a33a3f"/>
+<endpoint direction="bidirectional" id="idbdcc5ee-f694-4b59-a01a-fa29c0c06631"/>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition"/>
+<propertyCollection name="connectionType" order="0">
+<property isimportant="false" name="id">563ca2fa-ebe7-7649-f69d-5c3a26196a4d</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="kind">VIRTUAL</property>
+<property isimportant="false" name="shortcut">Virt</property>
+</propertyCollection>
+<propertyCollection name="view" order="0">
+<property isimportant="false" name="color">GRAY</property>
+<property isimportant="false" name="width">2</property>
+</propertyCollection>
+</link>
+</connectivity>
+</body>
+</tbml>

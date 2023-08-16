@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><tbml xmlns="http://www.teslaalliance.org/trs/tbml/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.teslaalliance.org/trs/tbml/1.0/tbml-core.xsd">
+<header>
+<name>New topology (7)</name>
+<description/>
+<property name="emulation" vendor="com.fnfr">enabled</property>
+</header>
+<illustration>
+<layer/>
+</illustration>
+<body>
+<resources>
+<resource guid="V1:VIRTUAL_MACHINE:CLOUD:e1c77406-b991-4b17-8764-1746737f84f8::cb8a9e97-615f-43ec-abd6-6d0397f0fccf" id="i056f59f3-f300-4155-beac-290cd8a4b206" shared="false" type="virtual_machine">
+<property isimportant="false" name="name">spirent_test1</property>
+<property isimportant="false" name="inventoryName">spirent_test1</property>
+<property isimportant="false" name="description">A virtual machine is an isolated guest operating system installation within a normal host operating system.</property>
+<property isimportant="false" name="utilizationType">EXCLUSIVE</property>
+<property isimportant="false" name="ilo_iconId"/>
+<property isimportant="false" name="iconURI">ilo://api/0/resource/icon?id=V1:VIRTUAL_MACHINE:CLOUD:e1c77406-b991-4b17-8764-1746737f84f8::cb8a9e97-615f-43ec-abd6-6d0397f0fccf</property>
+<property isimportant="false" name="isIconVisible"/>
+<property isimportant="false" name="ilo_vmTemplateId"/>
+<property isimportant="false" name="ilo_shape">RECTANGLE</property>
+<property isimportant="false" name="color">WHITE</property>
+<property isimportant="false" name="borderColor">SILVER</property>
+<property isimportant="false" name="cloudObjectId">cb8a9e97-615f-43ec-abd6-6d0397f0fccf</property>
+<property isimportant="false" name="cloudObjectOwnershipType">CLOUD</property>
+<propertyCollection name="Initial Configuration" order="undefined">
+<property description="Current status of object." editable="false" id="statusId" iscloudspecific="false" isimportant="false" name="Status" required="false" type="TEXT">SHUTOFF</property>
+<property description="The availability zone in which to launch the virtual machine." editable="false" id="availabilityZoneId" iscloudspecific="true" isimportant="false" name="Availability zone" required="false" type="DROP_DOWN_LIST"/>
+<property description="Key Pairs are required to login to your instance through SSH after it is launched." editable="false" id="keyPairId" iscloudspecific="true" isimportant="false" name="Key pair" required="false" type="DROP_DOWN_LIST"/>
+<property description="One or more security group names delimited with &quot;,&quot;. If you omit security group, the virtual machine is created in the default security group." editable="false" id="securityGroupId" iscloudspecific="false" isimportant="false" name="Security groups" required="false" type="TEXT"/>
+<property description="Configuration information or scripts to use upon launch." editable="false" id="customScriptId" iscloudspecific="false" isimportant="false" name="Customization script" required="false" type="TEXT_AREA"/>
+<property description="Configure IP packets to go through the Router that is connected to the same network. Note: This setting only works for Linux machines." editable="false" id="configureL3RoutesId" iscloudspecific="false" isimportant="false" name="Configure L3 routes" required="false" type="BOOLEAN">true</property>
+</propertyCollection>
+<propertyCollection name="Hardware Configuration" order="undefined">
+<property description="The hardware profile reference for the desired CPU Cores, RAM and disk size for your virtual machine." editable="false" id="hardwareProfileId" iscloudspecific="true" isimportant="false" name="Hardware profile" required="false" type="DROP_DOWN_LIST" valuelabel="m1.small (1 VCPU | 2,048MB RAM | 20GB Disk)">2</property>
+<property description="Minimum CPU cores for your virtual machine." editable="false" id="minCpuCoresId" iscloudspecific="false" isimportant="false" name="Min CPU cores" required="false" type="INTEGER"/>
+<property description="Minimum RAM in MB for your virtual machine." editable="false" id="minRamMbId" iscloudspecific="false" isimportant="false" name="Min RAM MB" required="false" type="INTEGER"/>
+<property description="Min disc in GB for your virtual machine." editable="false" id="minDiscGbId" iscloudspecific="false" isimportant="false" name="Min disc GB" required="false" type="INTEGER"/>
+</propertyCollection>
+<propertyCollection name="Image Configuration" order="undefined">
+<property description="The image reference for the desired image for your server instance." editable="false" id="imageId" iscloudspecific="true" isimportant="false" name="Image" required="false" type="DROP_DOWN_LIST"/>
+<property description="Search string for the virtual machine image by the operating system family." editable="false" id="osFamilyMatchId" iscloudspecific="false" isimportant="false" name="OS family" required="false" type="DROP_DOWN_LIST"/>
+<property description="Search string for the virtual machine image by the operating system version (full regex matching)." editable="false" id="osVersionMatchId" iscloudspecific="false" isimportant="false" name="OS version" required="false" type="TEXT"/>
+<property description="Search string for the virtual machine image by the image name (full or partial regex matching)." editable="false" id="imageNameMatchId" iscloudspecific="false" isimportant="false" name="Image name" required="false" type="TEXT"/>
+<property description="Search string for the virtual machine image by the image custom properties (full or partial regex matching)." editable="false" id="customPropertiesMatchId" iscloudspecific="false" isimportant="false" name="Custom properties match" required="false" type="TEXT"/>
+</propertyCollection>
+<propertyCollection name="General" order="undefined">
+<property description="" editable="false" id="cloudId" iscloudspecific="false" isimportant="false" name="Cloud" order="-100" required="true" type="DROP_DOWN_LIST" valuelabel="Opentack cloud">e1c77406-b991-4b17-8764-1746737f84f8</property>
+</propertyCollection>
+<boundary height="72" width="200" x="260" y="219"/>
+</resource>
+</resources>
+<connectivity/>
+</body>
+</tbml>
