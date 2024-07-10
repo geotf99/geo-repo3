@@ -2,6 +2,7 @@
 	"name": "Activity2",
 	"shortDescription": "Activity2",
 	"descriptionMarkdown": "activity.md",
+	"priority":60,
 	"topology": [
 	
 		{
