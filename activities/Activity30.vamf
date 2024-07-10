@@ -1,0 +1,7 @@
+{
+	"name": "Activity30",
+	"shortDescription": "Activity30",
+	"descriptionMarkdown": "activity.md",
+	"priority":20,
+	"topology": []
+}
